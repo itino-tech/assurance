@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net462;net6.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Version>1.0.0</Version>
+		<IsPackable>true</IsPackable>
+	    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Authors>Itino.Tech</Authors>
+		<Description>Easy to use arguments validation library.</Description>
+		<RepositoryUrl>https://github.com/itino-tech/assurance</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>validation,argument,assert,assertion,ensure,ensurance</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageIcon>favicon.png</PackageIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(ProjectDir)..\favicon.png" Pack="true" PackagePath="" />
+    <None Include="$(ProjectDir)..\readme.md" Pack="true" PackagePath=""/>
+  </ItemGroup>	
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>Itino.Assurance.Tests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+</Project>
